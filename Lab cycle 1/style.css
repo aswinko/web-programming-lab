@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:  rgb(30 41 59);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 4rem 12rem;
+    height: 100vh;
+}
+
+.container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.container p {
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 50px;
+    padding: 10px 10px;
+    width: 90%;
+}
+
+.container p a {
+    color: rgb(96 165 250);
+    
+}
+
+.table-container {
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    background: #fff;
+    height: 40%;
+    width: 40%;
+}
+
+th, td {
+    outline: 1;
+    border: 1px solid #000;
+    margin: 0px;
+}
