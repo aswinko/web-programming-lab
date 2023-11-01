@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Name using Js</title>
+</head>
+
+<body>
+
+    <label for="">Enter any string : </label>
+    <br>
+    <input type="text" name="name" id="name" />
+    <button onclick="print()">Print</button>
+    <p id="container"></p>
+    <script>
+        function print() {
+            var x = document.getElementById("name").value;
+            document.getElementById("container").innerHTML = x
+            console.log(x);
+        }
+
+    </script>
+</body>
+
+</html>
