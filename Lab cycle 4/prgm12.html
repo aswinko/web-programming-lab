@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js form validation</title>
+
+</head>
+<body>
+    <form action="prgm10.html" name="formVal" onsubmit="return validate()">
+        <label for="">Username : </label>
+        <input type="text" name="username" id="">
+        <br>
+        <br>
+        <label for="">Password : </label>
+        <input type="password" name="password" id="">
+        <br>
+        <br>
+        <button type="submit">Login</button>
+    </form>
+    <script>
+        function validate(){
+            let username = document.formVal.username.value;
+            let password = document.formVal.password.value;
+
+            if (username === '' || password === '') {
+                alert("Please enter all fields!")
+                return false
+            }
+
+        }
+    </script>
+</body>
+</html>
